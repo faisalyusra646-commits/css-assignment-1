@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: oswald , sans-serif;
+}
+
+body{
+  height: 100vh;
+  width: 100%;
+}
+
+/* Main layout wrapper */
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;  
+}
+
+/* Pink Left */
+.container-left {
+  background-color:  #6762f0;
+  color: white;
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;           
+  left: 0;
+  top: 0;
+}
+
+/* ... (profile card styling) ... */
+
+.profile-card{
+  width: 400px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: fixed;
+  top: 50%;
+  left: 42%;
+  transform: translate(-50%, -50%);  
+  box-shadow: -5px 39px 30px -5px rgba(39,39,39,0.88);
+}
+
+/* Upper section (pink area) */
+.card-top{
+  background-color :#6762f0 ;
+  color: black;
+  padding: 20px 45px;
+  
+}
+
+/* Profile image */
+.card-top img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+  outline: 4px groove  #6762f0;
+  outline-offset: 4px ; 
+  margin: 0 auto; 
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+/* linking area */
+.menu ul{
+  list-style: none;
+}
+
+.menu li{
+  margin: 15px 0;
+}
+
+.menu a {
+ color: whitesmoke;
+ text-decoration: none;
+ display: block;
+ font-weight: bold;
+ text-align: center;
+ transition: 0.3s;
+}
+
+.menu a:hover{
+color: rgb(98, 21, 199);
+}
+
+/* Lower section (white area) */
+.card-bottom{
+  background-color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* right section */
+
+.container-right {
+  
+  width: 50%;
+  margin-left: 50%;          
+  height: 100vh;
+  overflow-y: auto;          
+  background-color: #fff;
+  font-family: Oswald; 
+  scroll-behavior: smooth;
+  
+}
+
+section.content-card{
+
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 3em 4em;
+  box-sizing: border-box;
+  border-bottom: 1px solid #6762f0;
+}
+
+
+
+/* //////////FOR ABOUT SECTION///////////// */
+/* Name text */
+#about.content-card h2 {
+  font-weight: 600;
+  font-size: 50px;  
+  text-align: center; 
+  padding-left: 25%;
+}
+
+.first-name{
+  color: rgb(23, 3, 71);
+  text-shadow:-3px 4px 6px rgba(80,35,21,0.63);
+}
+
+.last-name{
+  color: black;
+  text-shadow:-3px 4px 6px rgba(80,35,21,0.63);
+}
+
+ /* line text */
+
+.para{
+  color: grey;
+  font-size:20px;
+  text-align:center;
+  display: inline-block;
+  padding: 0 50px;
+}
+
+/* icon links styling */
+
+.icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-left: 60px;
+    background-color: rgb(71, 69, 69);
+    color: white;
+    font-size: 30px; 
+    display: inline-flex; 
+    justify-content: center; 
+    align-items: center;
+    text-decoration: none;
+}
+
+.icon:hover {
+  background-color: rgb(23, 3, 71);
+}
+ 
+/* //////////FOR EXPERIENCE SECTION///////////// */
+#experience .content {
+   background-color: #fff;
+  max-width: 750px;
+  text-align: left;
+  font-family: 'Oswald', sans-serif;
+  padding: 30px;
+}
+
+ #experience h2 {
+  font-weight: 700;
+  font-size: 45px;
+  color:rgb(23, 3, 71);
+  text-align: center;
+  margin-bottom: 30px;
+  text-shadow: -2px 3px 6px rgba(80, 35, 21, 0.4); 
+} 
+
+.exp-heading {
+  color: black;
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#experience p {
+  color: grey;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+b{
+  color: #6762f0;
+}
+
+/* //////////FOR EDUCATION SECTION///////////// */
+#education .content {
+  background-color: #fff;
+  max-width: 750px;
+  text-align: left;
+  font-family: 'Oswald', sans-serif;
+  padding: 30px;
+
+}
+
+#education h2 {
+
+  font-weight: 700;
+  font-size: 45px;
+  color: rgb(23, 3, 71);
+  text-align: center;
+  margin-bottom: 10px;
+  text-shadow: -2px 3px 6px rgba(80, 35, 21, 0.4);
+}
+
+
+.edu-item h3{
+  color: black;
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.edu-detail {
+  color: grey;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* //////////FOR skills SECTION///////////// */
+#skills h2 {
+  font-weight: 700;
+  font-size: 45px;
+  color:rgb(23, 3, 71);
+  text-align: center;
+  margin-bottom: 8px;
+  text-shadow: -2px 3px 6px rgba(80, 35, 21, 0.4);
+}
+
+.icons {
+     color: rgb(75, 75, 75);
+     font-size: 30px;
+     padding: 10px 40px;
+
+}
+
+.icons i{
+  vertical-align: middle;
+  margin: 0 15px; 
+  
+}
+
+#skills .content h3{
+  color: grey;
+  font-weight:bold;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.points {
+     color: rgb(75, 75, 75);
+     font-size: 15px;
+     padding: 40px;
+     display: block;
+}
+
+.points i{
+  margin-left: 40px;
+}
+
+.p{
+  font-weight: lighter;
+  font-size: small;
+  color: grey;
+  text-align: justify;
+  display: inline-block;
+}
+
+/* //////////FOR INTEREST SECTION///////////// */
+#interest h2 {
+  font-weight: 700;
+  font-size: 45px;
+  color:rgb(23, 3, 71);
+  text-align: center;
+  margin-bottom: 8px;
+  text-shadow: -2px 3px 6px rgba(80, 35, 21, 0.4);
+}
+
+.content p{
+  color: grey;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: justify;
+  margin-left: 40px;
+}
+
+/* //////////FOR AWARDS SECTION///////////// */
+#award h2 {
+  font-weight: 700;
+  font-size: 45px;
+  color: rgb(23, 3, 71);
+  text-align: center;
+  margin-bottom: 70px;
+  text-shadow: -2px 3px 6px rgba(80, 35, 21, 0.4);
+  text-indent: 15vh;
+}
+
+.list{
+  font-weight: lighter;
+  font-size:medium;
+  color: grey;
+  text-align: justify;
+  display: inline-block;
+}
+
+
+
